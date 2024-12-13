@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: #000;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-info {
+    width: 40%;
+    padding: 60px 20px 0 120px;
+}
+
+.banner-img {
+    width: 60%;
+}
+
+.banner-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    padding: 10px 60px;
+}
+.main{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.banner-info h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    max-width: 420px;
+    color: #000;
+}
+
+.banner-info p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0;
+    color: #000;
+}
+.button{
+	border: 1px solid #000;
+	border-radius: 55px;
+	padding: 10px 15px;
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+	transition: all 0.5s;
+}
+.button:hover{
+	background-color: #000;
+	color: #fff;
+}
+.services-portfolio {
+    width: 100%;
+    padding: 48px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.card-grid {
+    display: grid;
+    gap: 24px;
+}
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card-text {
+    text-align: center;
+    color: #666;
+}
+.footer{
+	padding: 0 0 48px;
+	text-align: left;
+}
+.footer .title{
+	text-align: left;
+	margin-bottom: 30px;
+}
+.footer p{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.footer p a{
+	font-size: 20px;
+	color: #000;
+	font-weight: 600;
+	text-decoration: none;
+}
+.copyright{
+	padding: 15px 0;
+	text-align: center;
+	font-size: 14px;
+}
+@media (min-width: 992px) {
+    .services-portfolio {
+        padding: 96px 0;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 1299px) {
+.banner-info {
+    padding: 60px 20px 0 60px;
+}
+
+.header {
+    padding: 10px 30px;
+}
+}
+@media only screen and (max-width: 1024px) {
+.banner-info {
+    padding: 30px 20px 0 30px;
+}
+
+.header {
+    padding: 10px 15px;
+}
+.banner-info h1 {
+    font-size: 42px;
+}
+}
+@media only screen and (max-width: 767px) {
+	.banner-info h1 {
+    font-size: 32px;
+}
+	.banner-info {
+    padding: 15px;
+}
+
+.banner {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.banner-info h1{
+	max-width: 100%;
+}
+.banner-info, .banner-img{
+width: 100%;
+}
+.footer {
+    text-align: center;
+}
+
+.footer .title {
+    text-align: center;
+}
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.footer p{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.footer p a{
+	font-size: 16px;
+}
+}
